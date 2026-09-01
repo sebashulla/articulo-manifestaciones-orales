@@ -1,7 +1,7 @@
 # La boca como espejo del cuerpo — artículo web
 
-Página única (`index.html`, sin dependencias externas de código, solo imágenes
-enlazadas por URL) con el artículo "Enfermedades sistémicas con manifestaciones
+Página única (`index.html`, con una función Vercel (`api/leucemia.js`) para servir de forma estable
+la imagen de leucemia cuyo CDN de origen puede bloquear solicitudes desde dominios externos. con el artículo "Enfermedades sistémicas con manifestaciones
 orales visibles", ilustrado con 12 fotografías clínicas reales:
 8 de licencia libre de Wikimedia Commons y 4 cedidas/citadas de Elsevier España
 y El Español (con crédito y enlace a la fuente en cada pie de foto).
@@ -91,4 +91,11 @@ pública/comercial, ten en cuenta que —a diferencia de las imágenes de
 Wikimedia Commons— estas cuatro no tienen licencia libre explícita, así que lo
 más prudente es mantener siempre el crédito y el enlace, o sustituirlas por
 alternativas de Wikimedia Commons si buscas una licencia totalmente abierta.
-"# articulo-manifestaciones-orales" 
+
+## 4. PDF descargable
+
+Coloca el archivo `articulo-manifestaciones-orales.pdf` en la raíz del repositorio, al mismo nivel que `index.html`. La página ya incluye un botón que apunta a `/articulo-manifestaciones-orales.pdf`, por lo que Vercel lo servirá directamente como archivo estático.
+
+## 5. Imagen de leucemia en Vercel
+
+La imagen de leucemia originalmente se cargaba directamente desde el CDN de El Español. Ese tipo de CDN puede bloquear solicitudes cuando la página se abre desde otro dominio (hotlink/referrer), aunque la URL funcione al abrir el HTML localmente. Para evitarlo, la página usa `/api/leucemia`, una función serverless de Vercel que solicita la imagen al servidor de origen y la devuelve al navegador.

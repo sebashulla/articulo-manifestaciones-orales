@@ -202,6 +202,45 @@
     color:var(--accent2);
     text-decoration:none;
   }
+  .pdf-download{
+    margin:2.8rem 0 0;
+    padding:1.25rem 1.35rem;
+    background:var(--paper2);
+    border:1px solid var(--line);
+    border-radius:12px;
+    box-shadow:0 8px 24px rgba(28,25,23,.04);
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:1rem;
+  }
+  .pdf-download h2{
+    font-size:1.15rem;
+    margin:0 0 .2rem;
+  }
+  .pdf-download p{
+    margin:0;
+    color:var(--muted);
+    font-family:"Helvetica Neue",Arial,sans-serif;
+    font-size:.88rem;
+  }
+  .pdf-download a{
+    flex:0 0 auto;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:.45rem;
+    padding:.72rem 1rem;
+    border-radius:8px;
+    background:var(--accent);
+    color:#fff;
+    text-decoration:none;
+    font-family:"Helvetica Neue",Arial,sans-serif;
+    font-size:.85rem;
+    font-weight:700;
+  }
+  .pdf-download a:hover{filter:brightness(1.08);}
+
   @media (max-width:640px){
     body{font-size:16.5px;}
     header.hero{padding:4.5rem 1.2rem 3rem;}
@@ -223,6 +262,7 @@
     <p>Contenidos</p>
     <ol>
       <li><a href="#intro">Introducción</a></li>
+      <li><a href="#pdf">Descargar artículo en PDF</a></li>
       <li><a href="#diabetes">Diabetes mellitus</a></li>
       <li><a href="#anemia">Anemia ferropénica</a></li>
       <li><a href="#addison">Enfermedad de Addison</a></li>
@@ -245,6 +285,14 @@
   <section id="intro">
     <p class="lede">La cavidad oral es, en palabras de numerosos autores, <strong>la «ventana del cuerpo»</strong>: un lugar de fácil observación clínica donde múltiples enfermedades que afectan a órganos distantes —el sistema endocrino, la sangre, el intestino, el sistema inmunitario— dejan signos visibles antes incluso de que aparezcan otros síntomas.<sup class="cite"><a href="#ref1">[1]</a></sup> Reconocer estos signos puede acelerar diagnósticos, y en algunos casos salvar vidas.</p>
     <p>Este artículo reúne, con fines educativos, trece ejemplos de enfermedades sistémicas con manifestaciones orales características, cada una acompañada de una fotografía clínica real —de licencia libre en Wikimedia Commons o, cuando fue necesario, cedida por publicaciones médicas especializadas y citada con su fuente— y de referencias a artículos científicos y clínicos verificables. El objetivo no es sustituir el criterio clínico, sino mostrar, con evidencia visual y bibliográfica, por qué una exploración bucal cuidadosa puede ser una herramienta de cribado temprano tan valiosa como cualquier análisis de laboratorio.</p>
+  </section>
+
+  <section class="pdf-download" id="pdf" aria-label="Descarga del artículo en PDF">
+    <div>
+      <h2>Artículo completo en PDF</h2>
+      <p>Descarga una copia del artículo para leerlo sin conexión o guardarlo.</p>
+    </div>
+    <a href="/articulo-manifestaciones-orales.pdf" download>↓ Descargar PDF</a>
   </section>
 
   <article class="entry" id="diabetes">
@@ -272,10 +320,8 @@
     <span class="tag">Endocrino</span>
     <h2>Enfermedad de Addison<span class="lat">Pigmentación mucosa difusa</span></h2>
     <p>La insuficiencia suprarrenal primaria eleva la hormona ACTH, que estimula a los melanocitos y produce una hiperpigmentación cutánea y mucosa característica. En hasta el 92% de los pacientes esta pigmentación aparece en la mucosa yugal, las encías, el paladar, la lengua y el borde bermellón de los labios, y con frecuencia <strong>precede en meses o años</strong> a los demás síntomas (fatiga, hipotensión, pérdida de peso), lo que convierte a la exploración bucal en una herramienta diagnóstica temprana.<sup class="cite"><a href="#ref5">[5]</a></sup><sup class="cite"><a href="#ref6">[6]</a></sup></p>
-    <figure>
-      <img src="https://i.ytimg.com/vi/2weRweOVhww/sddefault.jpg" alt="Pigmentación mucosa difusa en la enfermedad de Addison" loading="lazy">
-      <figcaption>Pigmentación mucosa difusa en la enfermedad de Addison. Foto: Dr.Bernardo Velasco— <a href="https://www.youtube.com/watch?v=2weRweOVhww" target="_blank" rel="noopener">ver ficha original</a>.</figcaption>
-    </figure>  </article>
+    <div class="noimg">No se encontró en Wikimedia Commons una fotografía clínica de licencia libre de esta pigmentación. Puede consultarse una imagen clínica de referencia (con derechos reservados) en la librería de imágenes de DermNet NZ: <a href="https://dermnetnz.org/imagedetail/1880-addisons-disease" target="_blank" rel="noopener">dermnetnz.org/imagedetail/1880-addisons-disease</a>.</div>
+  </article>
 
   <article class="entry" id="peutz">
     <span class="tag">Genética · gastrointestinal</span>
@@ -312,7 +358,7 @@
     <h2>Infección por VIH/sida<span class="lat">Candidiasis oral, leucoplasia vellosa y sarcoma de Kaposi</span></h2>
     <p>La inmunosupresión asociada al VIH favorece tres hallazgos orales clásicos: la <strong>candidiasis pseudomembranosa</strong> (placas blanquecinas desprendibles sobre la mucosa), la <strong>leucoplasia vellosa</strong> (placas blancas corrugadas e irregulares en los bordes laterales de la lengua, causadas por el virus de Epstein-Barr y que, a diferencia de la candidiasis, no se desprenden al raspado) y el <strong>sarcoma de Kaposi</strong>, un tumor vascular asociado al herpesvirus humano 8 que aparece como placas o nódulos rojo-violáceos, típicamente en el paladar duro y la encía.<sup class="cite"><a href="#ref10">[10]</a></sup><sup class="cite"><a href="#ref11">[11]</a></sup></p>
     <figure>
-      <img src="//thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Acute_leukemia-ALL.jpg/330px-Acute_leukemia-ALL.jpg?utm_source=es.wikipedia.org&utm_campaign=parser&utm_content=thumbnail" alt="Candidiasis pseudomembranosa oral: placas blanquecinas sobre la lengua" loading="lazy">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Oral_thrush_Aphthae_Candida_albicans._PHIL_1217_lores.jpg" alt="Candidiasis pseudomembranosa oral: placas blanquecinas sobre la lengua" loading="lazy">
       <figcaption>Candidiasis pseudomembranosa oral («muguet»). Foto: CDC Public Health Image Library, dominio público, vía Wikimedia Commons — <a href="https://commons.wikimedia.org/wiki/File:Oral_thrush_Aphthae_Candida_albicans._PHIL_1217_lores.jpg" target="_blank" rel="noopener">ver ficha original</a>.</figcaption>
     </figure>
     <figure>
@@ -356,7 +402,7 @@
     <h2>Leucemia<span class="lat">Hiperplasia gingival, petequias y ulceración</span></h2>
     <p>Hasta un 66% de los casos del subtipo de leucemia mieloide aguda monocítica (M5) presenta infiltración leucémica de la encía, que se manifiesta como un agrandamiento gingival difuso, edematoso y a menudo hemorrágico. En series clínicas, las petequias o el sangrado (56%), la ulceración (53%) y el agrandamiento gingival (36%) figuran entre los signos orales iniciales más frecuentes de la enfermedad, y en ocasiones son el único motivo de consulta que conduce al diagnóstico.<sup class="cite"><a href="#ref15">[15]</a></sup> La palidez de la mucosa por anemia asociada y la mayor tendencia al sangrado gingival espontáneo, secundaria a trombocitopenia, completan el cuadro oral típico de estos pacientes.<sup class="cite"><a href="#ref18">[18]</a></sup></p>
     <figure>
-      <img src="https://s2.elespanol.com/2017/06/27/ciencia/salud/leucemia-hematologia_y_hemoterapia-cancer_226988450_37693065_1706x1280.jpg" alt="Ilustración clínica relacionada con la leucemia y sus manifestaciones hematológicas" loading="lazy">
+      <img src="/api/leucemia" alt="Ilustración clínica relacionada con la leucemia y sus manifestaciones hematológicas" loading="eager" decoding="async">
       <figcaption>Leucemia: la enfermedad hematológica que con más frecuencia deja signos visibles en la encía y la mucosa oral. Fuente: El Español — <a href="https://s2.elespanol.com/2017/06/27/ciencia/salud/leucemia-hematologia_y_hemoterapia-cancer_226988450_37693065_1706x1280.jpg" target="_blank" rel="noopener">imagen original</a>. © El Español, todos los derechos reservados; se muestra con fines educativos y de cita.</figcaption>
     </figure>
   </article>
@@ -410,7 +456,7 @@
       <li id="ref19">Manifestaciones bucales del síndrome de Sjögren. <em>Reumatología Clínica</em>, Elsevier España. <a href="https://www.reumatologiaclinica.org" target="_blank" rel="noopener">reumatologiaclinica.org</a></li>
       <li>Las fotografías de las secciones 1 a 8 provienen de Wikimedia Commons (imágenes de dominio público de los CDC o publicadas bajo licencias Creative Commons CC BY / CC BY-SA por sus autores) y conservan su crédito y enlace de origen en cada pie de foto. Las fotografías de las secciones 9, 10, 11 y 13 (Crohn, lupus, leucemia y Sjögren) proceden de Elsevier España y de El Español; son material con derechos reservados, reproducido aquí con fines exclusivamente educativos y de cita, con enlace a la fuente original en cada pie de foto.</li>
     </ol>
-    <p class="note">Artículo elaborado a partir de fuentes científicas verificables citadas arriba. Contenido de carácter educativo, de libre lectura y distribución. Última actualización: agosto de 2026.</p>
+    <p class="note">Artículo elaborado con apoyo de Claude (Anthropic) a partir de fuentes científicas verificables citadas arriba. Contenido de carácter educativo, de libre lectura y distribución. Última actualización: agosto de 2026.</p>
   </div>
 </footer>
 
