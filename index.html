@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La boca como espejo del cuerpo: enfermedades sistémicas con manifestaciones orales</title>
+<meta name="description" content="Artículo divulgativo e ilustrado sobre enfermedades sistémicas que se manifiestan en la cavidad oral, con imágenes y referencias científicas.">
+<style>
+  :root{
+    --ink:#1c1917;
+    --paper:#faf7f2;
+    --paper2:#ffffff;
+    --accent:#8a1f2d;
+    --accent2:#0f5c5c;
+    --muted:#6b6058;
+    --line:#e4dcd0;
+    --maxw:780px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family: "Iowan Old Style","Georgia","Palatino Linotype",serif;
+    line-height:1.65;
+    font-size:18px;
+  }
+  .sans{font-family:"Helvetica Neue",Arial,sans-serif;}
+  header.hero{
+    background: linear-gradient(160deg,#2b1116 0%, #4a1c22 45%, #6e2430 100%);
+    color:#f6ece4;
+    padding:6rem 1.5rem 4rem;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+  }
+  header.hero::after{
+    content:"";
+    position:absolute; inset:0;
+    background:radial-gradient(circle at 20% 20%, rgba(255,255,255,.08), transparent 40%);
+  }
+  header.hero .kicker{
+    font-family:"Helvetica Neue",Arial,sans-serif;
+    text-transform:uppercase;
+    letter-spacing:.18em;
+    font-size:.78rem;
+    color:#e7b8a8;
+    margin-bottom:1.1rem;
+  }
+  header.hero h1{
+    font-size:2.6rem;
+    line-height:1.15;
+    margin:0 0 1rem;
+    max-width:820px;
+    margin-left:auto; margin-right:auto;
+  }
+  header.hero p.sub{
+    font-family:"Helvetica Neue",Arial,sans-serif;
+    max-width:620px;
+    margin:0 auto;
+    color:#e9d9d0;
+    font-size:1.05rem;
+  }
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 1.5rem;}
+  nav.toc{
+    background:var(--paper2);
+    border-bottom:1px solid var(--line);
+    padding:1.4rem 0;
+  }
+  nav.toc .wrap{max-width:900px;}
+  nav.toc p{
+    font-family:"Helvetica Neue",Arial,sans-serif;
+    text-transform:uppercase;
+    letter-spacing:.12em;
+    font-size:.72rem;
+    color:var(--muted);
+    margin:0 0 .6rem;
+  }
+  nav.toc ol{
+    font-family:"Helvetica Neue",Arial,sans-serif;
+    columns:2;
+    column-gap:2rem;
+    padding-left:1.1rem;
+    margin:0;
+    font-size:.92rem;
+  }
+  nav.toc li{margin-bottom:.4rem;}
+  nav.toc a{color:var(--ink); text-decoration:none; border-bottom:1px dotted var(--muted);}
+  nav.toc a:hover{color:var(--accent);}
+
+  main{padding:3.5rem 0 2rem;}
+  .lede{
+    font-size:1.15rem;
+    color:#3a332d;
+  }
+  .lede strong{color:var(--accent);}
+
+  article.entry{
+    padding:3.2rem 0;
+    border-bottom:1px solid var(--line);
+  }
+  article.entry:last-of-type{border-bottom:none;}
+  .tag{
+    font-family:"Helvetica Neue",Arial,sans-serif;
+    display:inline-block;
+    font-size:.7rem;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    color:var(--accent2);
+    background:#e7f1ef;
+    padding:.28rem .65rem;
+    border-radius:999px;
+    margin-bottom:.9rem;
+  }
+  article.entry h2{
+    font-size:1.85rem;
+    margin:.2rem 0 .3rem;
+  }
+  article.entry h2 .lat{
+    display:block;
+    font-family:"Helvetica Neue",Arial,sans-serif;
+    font-size:.95rem;
+    font-style:italic;
+    color:var(--muted);
+    font-weight:400;
+    margin-top:.25rem;
+  }
+  figure{
+    margin:1.6rem 0;
+    background:var(--paper2);
+    border:1px solid var(--line);
+    border-radius:10px;
+    overflow:hidden;
+  }
+  figure img{
+    display:block;
+    width:100%;
+    height:auto;
+    max-height:420px;
+    object-fit:cover;
+    background:#eee;
+  }
+  figure figcaption{
+    font-family:"Helvetica Neue",Arial,sans-serif;
+    font-size:.82rem;
+    color:var(--muted);
+    padding:.7rem 1rem;
+    border-top:1px solid var(--line);
+  }
+  figure figcaption a{color:var(--accent2);}
+  .noimg{
+    font-family:"Helvetica Neue",Arial,sans-serif;
+    font-size:.85rem;
+    color:var(--muted);
+    background:#f1ece3;
+    border:1px dashed var(--line);
+    border-radius:10px;
+    padding:.9rem 1.1rem;
+    margin:1.4rem 0;
+  }
+  .box{
+    background:#fbf3ea;
+    border-left:4px solid var(--accent);
+    padding:1rem 1.3rem;
+    border-radius:6px;
+    font-size:.98rem;
+    margin:1.4rem 0;
+  }
+  .box strong{color:var(--accent);}
+  sup.cite a{
+    text-decoration:none;
+    color:var(--accent2);
+    font-weight:700;
+  }
+  footer{
+    background:#221010;
+    color:#e9d9d0;
+    padding:3.5rem 0 4rem;
+    font-family:"Helvetica Neue",Arial,sans-serif;
+  }
+  footer h2{color:#fff; font-family:inherit; font-size:1.3rem;}
+  footer ol{
+    padding-left:1.2rem;
+    font-size:.88rem;
+    line-height:1.8;
+  }
+  footer li{margin-bottom:.7rem; color:#d9c7bd;}
+  footer a{color:#f0b9a2;}
+  footer .note{
+    margin-top:2.5rem;
+    padding-top:1.5rem;
+    border-top:1px solid #402323;
+    font-size:.8rem;
+    color:#b39c92;
+  }
+  .backtotop{
+    display:inline-block;
+    margin-top:2rem;
+    font-family:"Helvetica Neue",Arial,sans-serif;
+    font-size:.8rem;
+    color:var(--accent2);
+    text-decoration:none;
+  }
+  @media (max-width:640px){
+    body{font-size:16.5px;}
+    header.hero{padding:4.5rem 1.2rem 3rem;}
+    header.hero h1{font-size:2rem;}
+    nav.toc ol{columns:1;}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero" id="top">
+  <p class="kicker">Divulgación en medicina oral</p>
+  <h1>La boca como espejo del cuerpo</h1>
+  <p class="sub">Un recorrido ilustrado por las enfermedades sistémicas que dejan huella —a veces la primera huella visible— dentro de la cavidad oral.</p>
+</header>
+
+<nav class="toc">
+  <div class="wrap">
+    <p>Contenidos</p>
+    <ol>
+      <li><a href="#intro">Introducción</a></li>
+      <li><a href="#diabetes">Diabetes mellitus</a></li>
+      <li><a href="#anemia">Anemia ferropénica</a></li>
+      <li><a href="#addison">Enfermedad de Addison</a></li>
+      <li><a href="#peutz">Síndrome de Peutz-Jeghers</a></li>
+      <li><a href="#kawasaki">Enfermedad de Kawasaki</a></li>
+      <li><a href="#escorbuto">Escorbuto (déficit de vitamina C)</a></li>
+      <li><a href="#vih">Infección por VIH/sida</a></li>
+      <li><a href="#liquen">Liquen plano oral</a></li>
+      <li><a href="#crohn">Enfermedad de Crohn</a></li>
+      <li><a href="#lupus">Lupus eritematoso sistémico</a></li>
+      <li><a href="#leucemia">Leucemia</a></li>
+      <li><a href="#sjogren">Síndrome de Sjögren</a></li>
+      <li><a href="#referencias">Referencias</a></li>
+    </ol>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <section id="intro">
+    <p class="lede">La cavidad oral es, en palabras de numerosos autores, <strong>la «ventana del cuerpo»</strong>: un lugar de fácil observación clínica donde múltiples enfermedades que afectan a órganos distantes —el sistema endocrino, la sangre, el intestino, el sistema inmunitario— dejan signos visibles antes incluso de que aparezcan otros síntomas.<sup class="cite"><a href="#ref1">[1]</a></sup> Reconocer estos signos puede acelerar diagnósticos, y en algunos casos salvar vidas.</p>
+    <p>Este artículo reúne, con fines educativos, trece ejemplos de enfermedades sistémicas con manifestaciones orales características, cada una acompañada de una fotografía clínica real —de licencia libre en Wikimedia Commons o, cuando fue necesario, cedida por publicaciones médicas especializadas y citada con su fuente— y de referencias a artículos científicos y clínicos verificables. El objetivo no es sustituir el criterio clínico, sino mostrar, con evidencia visual y bibliográfica, por qué una exploración bucal cuidadosa puede ser una herramienta de cribado temprano tan valiosa como cualquier análisis de laboratorio.</p>
+  </section>
+
+  <article class="entry" id="diabetes">
+    <span class="tag">Endocrino · metabólico</span>
+    <h2>Diabetes mellitus<span class="lat">Enfermedad periodontal, xerostomía y lengua geográfica</span></h2>
+    <p>La diabetes mal controlada favorece la enfermedad periodontal, la sequedad bucal (xerostomía) y una mayor susceptibilidad a infecciones por <em>Candida</em>. También se ha descrito una asociación —aunque no siempre confirmada estadísticamente— entre la diabetes tipo 1 y la <strong>lengua geográfica</strong> (glositis migratoria benigna), una condición inflamatoria que produce zonas rojizas de descamación en el dorso lingual, de bordes blanquecinos y forma cambiante.<sup class="cite"><a href="#ref2">[2]</a></sup></p>
+    <figure>
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Geographic_tongue.JPG" alt="Lengua geográfica, con áreas rojizas de descamación en el dorso lingual" loading="lazy">
+      <figcaption>Lengua geográfica (glositis migratoria benigna). Foto: Wikimedia Commons, dominio público / uso libre — <a href="https://commons.wikimedia.org/wiki/File:Geographic_tongue.JPG" target="_blank" rel="noopener">ver ficha original</a>.</figcaption>
+    </figure>
+    <p>La periodontitis y la diabetes tienen además una relación bidireccional bien documentada: la inflamación periodontal crónica puede dificultar el control glucémico, y la hiperglucemia mantenida agrava la destrucción del tejido de soporte dental.<sup class="cite"><a href="#ref3">[3]</a></sup></p>
+  </article>
+
+  <article class="entry" id="anemia">
+    <span class="tag">Hematología</span>
+    <h2>Anemia ferropénica<span class="lat">Queilitis angular y glositis atrófica</span></h2>
+    <p>El déficit de hierro (y, en menor medida, de vitamina B12 o ácido fólico) puede manifestarse en la boca como <strong>queilitis angular</strong> —fisuras, eritema y descamación en las comisuras labiales— y como <strong>glositis atrófica</strong>, con pérdida de las papilas linguales y una lengua lisa y pálida o dolorosa. En su forma más clásica, la combinación de anemia ferropénica, glositis y disfagia por membranas esofágicas se conoce como síndrome de Plummer-Vinson.<sup class="cite"><a href="#ref4">[4]</a></sup></p>
+    <figure>
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Angular_cheilitis1.jpg" alt="Queilitis angular: fisuras y enrojecimiento en las comisuras de los labios" loading="lazy">
+      <figcaption>Queilitis angular bilateral, hallazgo asociado a anemia ferropénica. Foto: Matthew Ferguson, Wikimedia Commons, CC BY-SA 3.0 — <a href="https://commons.wikimedia.org/wiki/File:Angular_cheilitis1.jpg" target="_blank" rel="noopener">ver ficha original</a>.</figcaption>
+    </figure>
+  </article>
+
+  <article class="entry" id="addison">
+    <span class="tag">Endocrino</span>
+    <h2>Enfermedad de Addison<span class="lat">Pigmentación mucosa difusa</span></h2>
+    <p>La insuficiencia suprarrenal primaria eleva la hormona ACTH, que estimula a los melanocitos y produce una hiperpigmentación cutánea y mucosa característica. En hasta el 92% de los pacientes esta pigmentación aparece en la mucosa yugal, las encías, el paladar, la lengua y el borde bermellón de los labios, y con frecuencia <strong>precede en meses o años</strong> a los demás síntomas (fatiga, hipotensión, pérdida de peso), lo que convierte a la exploración bucal en una herramienta diagnóstica temprana.<sup class="cite"><a href="#ref5">[5]</a></sup><sup class="cite"><a href="#ref6">[6]</a></sup></p>
+    <figure>
+      <img src="https://i.ytimg.com/vi/2weRweOVhww/sddefault.jpg" alt="Pigmentación mucosa difusa en la enfermedad de Addison" loading="lazy">
+      <figcaption>Pigmentación mucosa difusa en la enfermedad de Addison. Foto: Dr.Bernardo Velasco— <a href="https://www.youtube.com/watch?v=2weRweOVhww" target="_blank" rel="noopener">ver ficha original</a>.</figcaption>
+    </figure>  </article>
+
+  <article class="entry" id="peutz">
+    <span class="tag">Genética · gastrointestinal</span>
+    <h2>Síndrome de Peutz-Jeghers<span class="lat">Máculas melanóticas periorales</span></h2>
+    <p>Este trastorno autosómico dominante, causado por mutaciones en el gen <em>STK11/LKB1</em>, asocia pólipos hamartomatosos gastrointestinales con manchas pigmentadas de color marrón oscuro a azul-negruzco alrededor de la boca, en la mucosa bucal y en dedos de manos y pies. Estas máculas suelen aparecer en la infancia, cruzan el borde del labio —a diferencia de las simples pecas— y en más del 95% de los casos se localizan en la región perioral.<sup class="cite"><a href="#ref7">[7]</a></sup></p>
+    <figure>
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Manifestations_of_Peutz-Jeghers_syndrome.png" alt="Manchas pigmentadas alrededor de la boca en el síndrome de Peutz-Jeghers" loading="lazy">
+      <figcaption>Manifestaciones mucocutáneas del síndrome de Peutz-Jeghers. Foto: Wikimedia Commons — <a href="https://commons.wikimedia.org/wiki/Category:Peutz%E2%80%93Jeghers_syndrome" target="_blank" rel="noopener">ver categoría original</a>.</figcaption>
+    </figure>
+  </article>
+
+  <article class="entry" id="kawasaki">
+    <span class="tag">Pediatría · vasculitis</span>
+    <h2>Enfermedad de Kawasaki<span class="lat">Lengua «en fresa» y labios fisurados</span></h2>
+    <p>Esta vasculitis febril de la infancia se diagnostica clínicamente, y sus criterios incluyen cambios muy visibles en labios y cavidad oral: labios rojos, secos y agrietados, y una <strong>lengua «en fresa»</strong> —papilas fungiformes hipertróficas sobre un fondo eritematoso— casi indistinguible de la que aparece en la escarlatina o el síndrome del shock tóxico, con las que forma parte del diagnóstico diferencial.<sup class="cite"><a href="#ref8">[8]</a></sup></p>
+    <figure>
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Kawasaki_symptoms_A.jpg" alt="Lengua en fresa y labios enrojecidos y agrietados en la enfermedad de Kawasaki" loading="lazy">
+      <figcaption>(A) Inyección conjuntival bilateral. (B) Lengua «en fresa» y labios rojos, secos y fisurados. Foto: Wikimedia Commons — <a href="https://commons.wikimedia.org/wiki/File:Kawasaki_symptoms_A.jpg" target="_blank" rel="noopener">ver ficha original</a>.</figcaption>
+    </figure>
+  </article>
+
+  <article class="entry" id="escorbuto">
+    <span class="tag">Nutrición</span>
+    <h2>Escorbuto<span class="lat">Déficit de vitamina C</span></h2>
+    <p>La vitamina C es indispensable para la síntesis de colágeno. Su carencia grave produce encías edematosas, esponjosas, de color rojo-púrpura y con sangrado espontáneo, además de movilidad y pérdida dental. Aunque hoy se asocia sobre todo a desnutrición severa, alcoholismo o dietas extremadamente restrictivas, sigue documentándose en la práctica clínica actual.<sup class="cite"><a href="#ref9">[9]</a></sup></p>
+    <figure>
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Scorbutic_gums.jpg" alt="Encías inflamadas y hemorrágicas características del escorbuto" loading="lazy">
+      <figcaption>Encías escorbúticas: edema, coloración rojo-violácea y sangrado. Foto: Wikimedia Commons — <a href="https://commons.wikimedia.org/wiki/Category:Oral_lesions" target="_blank" rel="noopener">ver categoría original</a>.</figcaption>
+    </figure>
+  </article>
+
+  <article class="entry" id="vih">
+    <span class="tag">Infectología</span>
+    <h2>Infección por VIH/sida<span class="lat">Candidiasis oral, leucoplasia vellosa y sarcoma de Kaposi</span></h2>
+    <p>La inmunosupresión asociada al VIH favorece tres hallazgos orales clásicos: la <strong>candidiasis pseudomembranosa</strong> (placas blanquecinas desprendibles sobre la mucosa), la <strong>leucoplasia vellosa</strong> (placas blancas corrugadas e irregulares en los bordes laterales de la lengua, causadas por el virus de Epstein-Barr y que, a diferencia de la candidiasis, no se desprenden al raspado) y el <strong>sarcoma de Kaposi</strong>, un tumor vascular asociado al herpesvirus humano 8 que aparece como placas o nódulos rojo-violáceos, típicamente en el paladar duro y la encía.<sup class="cite"><a href="#ref10">[10]</a></sup><sup class="cite"><a href="#ref11">[11]</a></sup></p>
+    <figure>
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Oral_thrush_Aphthae_Candida_albicans._PHIL_1217_lores.jpg" alt="Candidiasis pseudomembranosa oral: placas blanquecinas sobre la lengua" loading="lazy">
+      <figcaption>Candidiasis pseudomembranosa oral («muguet»). Foto: CDC Public Health Image Library, dominio público, vía Wikimedia Commons — <a href="https://commons.wikimedia.org/wiki/File:Oral_thrush_Aphthae_Candida_albicans._PHIL_1217_lores.jpg" target="_blank" rel="noopener">ver ficha original</a>.</figcaption>
+    </figure>
+    <figure>
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/KaposisSarcomaFromCDC03-18-06.JPG" alt="Sarcoma de Kaposi intraoral: lesión violácea en la mucosa" loading="lazy">
+      <figcaption>Sarcoma de Kaposi intraoral. Foto: CDC Public Health Image Library, dominio público, vía Wikimedia Commons — <a href="https://commons.wikimedia.org/wiki/File:KaposisSarcomaFromCDC03-18-06.JPG" target="_blank" rel="noopener">ver ficha original</a>.</figcaption>
+    </figure>
+  </article>
+
+  <article class="entry" id="liquen">
+    <span class="tag">Dermatología · autoinmune</span>
+    <h2>Liquen plano oral<span class="lat">Estrías de Wickham</span></h2>
+    <p>El liquen plano oral es un trastorno inflamatorio mediado por linfocitos T que afecta la mucosa bucal, con una prevalencia estimada del 0,5–2% de la población. Su forma más frecuente, la <strong>reticular</strong>, se presenta como finas líneas blancas entrelazadas (estrías de Wickham) en la mucosa yugal, habitualmente asintomáticas; la forma erosiva, en cambio, cursa con áreas rojas dolorosas y úlceras. La Organización Mundial de la Salud lo clasifica como una condición potencialmente maligna, con un riesgo de transformación a carcinoma oral de escamosas de hasta el 2%.<sup class="cite"><a href="#ref12">[12]</a></sup></p>
+    <figure>
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Lichen_planus.jpg" alt="Lesiones reticulares blanquecinas de liquen plano en la mucosa oral" loading="lazy">
+      <figcaption>Liquen plano oral. Foto: Wikimedia Commons, CC BY-SA 4.0 — <a href="https://commons.wikimedia.org/wiki/File:Lichen_planus.jpg" target="_blank" rel="noopener">ver ficha original</a>.</figcaption>
+    </figure>
+  </article>
+
+  <article class="entry" id="crohn">
+    <span class="tag">Gastroenterología</span>
+    <h2>Enfermedad de Crohn<span class="lat">Mucosa «en empedrado» y queilitis granulomatosa</span></h2>
+    <p>Entre el 0,5% y el 20% de los pacientes con enfermedad de Crohn presenta manifestaciones orales, a veces antes que los síntomas intestinales, lo que las convierte en un signo centinela valioso para el diagnóstico precoz.<sup class="cite"><a href="#ref13">[13]</a></sup> Las más características son el edema difuso de la mucosa con aspecto de «empedrado» (<em>cobblestoning</em>), úlceras lineales profundas en los surcos vestibulares, hinchazón labial persistente por infiltración granulomatosa (queilitis granulomatosa) y una mucogingivitis localizada en forma de «encía en fresa» (<em>strawberry gums</em>). El hallazgo histológico distintivo, cuando se biopsia, es el granuloma no caseificante, idéntico al que aparece en las lesiones intestinales.<sup class="cite"><a href="#ref16">[16]</a></sup></p>
+    <figure>
+      <img src="https://static.elsevier.es/multimedia/03750906/0000008900000004/v1_202411111142/S0375090624000922/v1_202411111142/es/main.assets/gr1.jpeg" alt="Manifestaciones orales de la enfermedad de Crohn: edema labial y mucosa en empedrado" loading="lazy">
+      <figcaption>Manifestaciones orales de la enfermedad de Crohn. Fuente: Elsevier España — <a href="https://static.elsevier.es/multimedia/03750906/0000008900000004/v1_202411111142/S0375090624000922/v1_202411111142/es/main.assets/gr1.jpeg" target="_blank" rel="noopener">imagen original</a>. © Elsevier, todos los derechos reservados; se muestra con fines educativos y de cita.</figcaption>
+    </figure>
+  </article>
+
+  <article class="entry" id="lupus">
+    <span class="tag">Autoinmune · reumatología</span>
+    <h2>Lupus eritematoso sistémico<span class="lat">Úlceras orales y placas discoides</span></h2>
+    <p>Una revisión sistemática de 2022 que analizó 15 estudios encontró que las manifestaciones orales más frecuentes en el lupus eritematoso sistémico son las <strong>úlceras orales</strong> (a menudo indoloras, en paladar duro), la hiposalivación, las pigmentaciones, el ardor lingual (glosodinia), la lengua fisurada, la queilitis y, en algunos pacientes, un síndrome de Sjögren secundario asociado.<sup class="cite"><a href="#ref14">[14]</a></sup> Las lesiones específicas suelen presentarse como placas discoides de bordes blancos irradiados en forma de estrías («en panal de abeja» o <em>honeycomb plaques</em>) sobre una base eritematosa central, y son consideradas uno de los once criterios clínicos clásicos para el diagnóstico de la enfermedad.<sup class="cite"><a href="#ref17">[17]</a></sup></p>
+    <figure>
+      <img src="https://static.elsevier.es/multimedia/1699258X/00000016000002P2/v1_202005111112/S1699258X18300457/v1_202005111112/es/main.assets/gr1.jpeg" alt="Lesión discoide del lupus eritematoso en la mucosa oral" loading="lazy">
+      <figcaption>Lesión oral discoide en un paciente con lupus eritematoso sistémico. Fuente: Elsevier España, <em>Reumatología Clínica</em> — <a href="https://static.elsevier.es/multimedia/1699258X/00000016000002P2/v1_202005111112/S1699258X18300457/v1_202005111112/es/main.assets/gr1.jpeg" target="_blank" rel="noopener">imagen original</a>. © Elsevier, todos los derechos reservados; se muestra con fines educativos y de cita.</figcaption>
+    </figure>
+  </article>
+
+  <article class="entry" id="leucemia">
+    <span class="tag">Hematología · oncología</span>
+    <h2>Leucemia<span class="lat">Hiperplasia gingival, petequias y ulceración</span></h2>
+    <p>Hasta un 66% de los casos del subtipo de leucemia mieloide aguda monocítica (M5) presenta infiltración leucémica de la encía, que se manifiesta como un agrandamiento gingival difuso, edematoso y a menudo hemorrágico. En series clínicas, las petequias o el sangrado (56%), la ulceración (53%) y el agrandamiento gingival (36%) figuran entre los signos orales iniciales más frecuentes de la enfermedad, y en ocasiones son el único motivo de consulta que conduce al diagnóstico.<sup class="cite"><a href="#ref15">[15]</a></sup> La palidez de la mucosa por anemia asociada y la mayor tendencia al sangrado gingival espontáneo, secundaria a trombocitopenia, completan el cuadro oral típico de estos pacientes.<sup class="cite"><a href="#ref18">[18]</a></sup></p>
+    <figure>
+      <img src="https://s2.elespanol.com/2017/06/27/ciencia/salud/leucemia-hematologia_y_hemoterapia-cancer_226988450_37693065_1706x1280.jpg" alt="Ilustración clínica relacionada con la leucemia y sus manifestaciones hematológicas" loading="lazy">
+      <figcaption>Leucemia: la enfermedad hematológica que con más frecuencia deja signos visibles en la encía y la mucosa oral. Fuente: El Español — <a href="https://s2.elespanol.com/2017/06/27/ciencia/salud/leucemia-hematologia_y_hemoterapia-cancer_226988450_37693065_1706x1280.jpg" target="_blank" rel="noopener">imagen original</a>. © El Español, todos los derechos reservados; se muestra con fines educativos y de cita.</figcaption>
+    </figure>
+  </article>
+
+  <article class="entry" id="sjogren">
+    <span class="tag">Autoinmune</span>
+    <h2>Síndrome de Sjögren<span class="lat">Xerostomía y aumento de caries</span></h2>
+    <p>La destrucción autoinmune progresiva de las glándulas salivales produce una sequedad bucal marcada (xerostomía) que, al reducir el efecto protector y remineralizante de la saliva, se traduce clínicamente en caries cervicales de rápida progresión, fisuras y atrofia de la mucosa lingual, dificultad para hablar y tragar, y mayor susceptibilidad a la candidiasis oral.<sup class="cite"><a href="#ref3">[3]</a></sup> En la exploración es frecuente observar una mucosa seca, brillante y adherente al espejo dental, una lengua depapilada y, en las glándulas salivales mayores, episodios recurrentes de tumefacción parotídea.<sup class="cite"><a href="#ref19">[19]</a></sup></p>
+    <figure>
+      <img src="https://static.elsevier.es/multimedia/1699258X/00000016000002P1/v2_202004280720/S1699258X18300913/v2_202004280720/es/main.assets/gr1.jpeg" alt="Mucosa oral seca característica del síndrome de Sjögren" loading="lazy">
+      <figcaption>Xerostomía y afectación de la mucosa oral en el síndrome de Sjögren. Fuente: Elsevier España, <em>Reumatología Clínica</em> — <a href="https://static.elsevier.es/multimedia/1699258X/00000016000002P1/v2_202004280720/S1699258X18300913/v2_202004280720/es/main.assets/gr1.jpeg" target="_blank" rel="noopener">imagen original</a>. © Elsevier, todos los derechos reservados; se muestra con fines educativos y de cita.</figcaption>
+    </figure>
+  </article>
+
+  <section id="cierre">
+    <h2 style="font-size:1.5rem;">En síntesis</h2>
+    <p>Los trece casos reunidos aquí comparten un mismo mensaje clínico: la boca no es un compartimento aislado, sino un tejido tan vascularizado, inervado e inmunológicamente activo como cualquier otro órgano, y por eso refleja con rapidez lo que ocurre en el resto del cuerpo. Una pigmentación nueva, una úlcera que no cicatriza, una encía que sangra sin motivo aparente o una lengua que cambia de aspecto no siempre son «solo» un problema dental: en ocasiones son la primera pista visible de una enfermedad sistémica que todavía no ha dado la cara en ningún otro lugar.</p>
+  </section>
+
+  <div class="box">
+    <strong>Nota importante.</strong> Este artículo tiene fines exclusivamente educativos y de divulgación. No sustituye una consulta odontológica o médica. Ante cualquier lesión, mancha o cambio persistente en la mucosa oral, la recomendación siempre es acudir a un profesional de la salud para su evaluación.
+  </div>
+
+  <a class="backtotop" href="#top">↑ Volver al inicio</a>
+</main>
+
+<footer id="referencias">
+  <div class="wrap">
+    <h2>Referencias</h2>
+    <ol>
+      <li id="ref1">Porter, S., Mercadante, V., &amp; Fedele, S. (2017). Oral manifestations of systemic disease. <em>British Dental Journal, 223</em>, 683–691. <a href="https://www.nature.com/articles/sj.bdj.2017.884" target="_blank" rel="noopener">doi.org/10.1038/sj.bdj.2017.884</a></li>
+      <li id="ref2">Geographic Tongue. <em>StatPearls</em> [Internet]. Treasure Island (FL): StatPearls Publishing. <a href="https://www.ncbi.nlm.nih.gov/books/NBK554466/" target="_blank" rel="noopener">ncbi.nlm.nih.gov/books/NBK554466</a></li>
+      <li id="ref3">American Academy of Family Physicians. Oral Manifestations of Systemic Disease. <em>American Family Physician</em>, 2010. <a href="https://www.aafp.org/afp/2010/1201/p1381" target="_blank" rel="noopener">aafp.org/afp/2010/1201/p1381</a></li>
+      <li id="ref4">Angular cheilitis induced by iron deficiency anemia. <em>Cleveland Clinic Journal of Medicine, 85</em>(8), 581, 2018. <a href="https://www.ccjm.org/content/85/8/581" target="_blank" rel="noopener">ccjm.org/content/85/8/581</a></li>
+      <li id="ref5">Sarkar, S. B., Sarkar, S., Ghosh, S., &amp; Bandyopadhyay, S. (2012). Addison's disease. <em>Contemporary Clinical Dentistry, 3</em>(4), 484–486. <a href="https://doi.org/10.4103/0976-237X.107450" target="_blank" rel="noopener">doi.org/10.4103/0976-237X.107450</a></li>
+      <li id="ref6">Oral hyperpigmentation with weakness and salt-craving. <em>Cleveland Clinic Journal of Medicine, 89</em>(4), 180, 2022. <a href="https://www.ccjm.org/content/89/4/180" target="_blank" rel="noopener">ccjm.org/content/89/4/180</a></li>
+      <li id="ref7">Peutz-Jeghers Syndrome. <em>StatPearls</em> [Internet]. Treasure Island (FL): StatPearls Publishing. <a href="https://www.ncbi.nlm.nih.gov/books/NBK535357/" target="_blank" rel="noopener">ncbi.nlm.nih.gov/books/NBK535357</a></li>
+      <li>Peutz-Jeghers syndrome. LITFL Medical Eponym Library. <a href="https://litfl.com/peutz-jeghers-syndrome/" target="_blank" rel="noopener">litfl.com/peutz-jeghers-syndrome</a></li>
+      <li id="ref8">Shimizu, A., Ebara, Y., Nomura, S., &amp; Yamada, Y. (2020). Chronological changes in strawberry tongue in toxic shock syndrome toxin-1–mediated exanthematous disease. <em>Journal of General and Family Medicine, 21</em>(6), 280–281. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7689219" target="_blank" rel="noopener">PMC7689219</a></li>
+      <li id="ref9">Oral manifestations of systemic disease. <em>BDJ Team, 5</em>, 18012, 2018. <a href="https://www.nature.com/articles/bdjteam201812" target="_blank" rel="noopener">nature.com/articles/bdjteam201812</a></li>
+      <li id="ref10">Oral Candidiasis. <em>StatPearls</em> [Internet]. Treasure Island (FL): StatPearls Publishing. <a href="https://www.ncbi.nlm.nih.gov/books/NBK545282/" target="_blank" rel="noopener">ncbi.nlm.nih.gov/books/NBK545282</a></li>
+      <li id="ref11">Hairy leukoplakia — Background y fisiopatología. Medscape / eMedicine. <a href="https://emedicine.medscape.com/article/279269-overview" target="_blank" rel="noopener">emedicine.medscape.com/article/279269-overview</a></li>
+      <li id="ref12">Oral Lichen Planus: A Narrative Review Navigating Etiologies, Clinical Manifestations, Diagnostics, and Therapeutic Approaches. <em>Journal of Clinical Medicine, 13</em>(17), 5280, 2024. <a href="https://www.mdpi.com/2077-0383/13/17/5280" target="_blank" rel="noopener">mdpi.com/2077-0383/13/17/5280</a></li>
+      <li id="ref13">Oral Manifestations of Systemic Disease. <em>American Family Physician</em>, 2010 (hallazgos en enfermedad de Crohn). <a href="https://www.aafp.org/afp/2010/1201/p1381" target="_blank" rel="noopener">aafp.org/afp/2010/1201/p1381</a></li>
+      <li id="ref14">García-Ríos, P., Pecci-Lloret, M. P., &amp; Oñate-Sánchez, R. E. (2022). Oral Manifestations of Systemic Lupus Erythematosus: A Systematic Review. <em>International Journal of Environmental Research and Public Health, 19</em>(19), 11910. <a href="https://doi.org/10.3390/ijerph191911910" target="_blank" rel="noopener">doi.org/10.3390/ijerph191911910</a></li>
+      <li id="ref15">Leukemic gingival enlargement: A case report and review of literature. <em>Journal of Oral and Maxillofacial Pathology, 22</em>(Suppl 1), S77–S81, 2018. <a href="https://journals.lww.com/jpat/" target="_blank" rel="noopener">journals.lww.com/jpat</a> · Gingival Enlargement Can Constitute the Only Diagnostic Sign of Leukemia. <em>Cureus</em>, 2023. <a href="https://www.cureus.com/articles/203301" target="_blank" rel="noopener">cureus.com/articles/203301</a></li>
+      <li>Oral and Maxillo-Facial Manifestations of Systemic Diseases: An Overview. <em>PMC8002330</em>. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8002330/" target="_blank" rel="noopener">ncbi.nlm.nih.gov/pmc/articles/PMC8002330</a></li>
+      <li id="ref16">Lesiones orales para el diagnóstico de la enfermedad de Crohn: presentación de 5 pacientes. <em>Quintessence</em>. <a href="https://www.elsevier.es/es-revista-quintessence-9-articulo-lesiones-orales-el-diagnostico-enfermedad-X0214098510818228" target="_blank" rel="noopener">elsevier.es (Quintessence)</a></li>
+      <li id="ref17">Manifestaciones cutáneas y orales del lupus eritematoso sistémico. <em>Reumatología Clínica</em>, Elsevier España. <a href="https://www.reumatologiaclinica.org" target="_blank" rel="noopener">reumatologiaclinica.org</a></li>
+      <li id="ref18">Leucemia: signos, síntomas y manifestaciones clínicas. El Español — Ciencia y Salud. <a href="https://www.elespanol.com" target="_blank" rel="noopener">elespanol.com</a></li>
+      <li id="ref19">Manifestaciones bucales del síndrome de Sjögren. <em>Reumatología Clínica</em>, Elsevier España. <a href="https://www.reumatologiaclinica.org" target="_blank" rel="noopener">reumatologiaclinica.org</a></li>
+      <li>Las fotografías de las secciones 1 a 8 provienen de Wikimedia Commons (imágenes de dominio público de los CDC o publicadas bajo licencias Creative Commons CC BY / CC BY-SA por sus autores) y conservan su crédito y enlace de origen en cada pie de foto. Las fotografías de las secciones 9, 10, 11 y 13 (Crohn, lupus, leucemia y Sjögren) proceden de Elsevier España y de El Español; son material con derechos reservados, reproducido aquí con fines exclusivamente educativos y de cita, con enlace a la fuente original en cada pie de foto.</li>
+    </ol>
+    <p class="note">Artículo elaborado a partir de fuentes científicas verificables citadas arriba. Contenido de carácter educativo, de libre lectura y distribución. Última actualización: agosto de 2026.</p>
+  </div>
+</footer>
+
+</body>
+</html>
